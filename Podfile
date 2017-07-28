@@ -7,4 +7,5 @@ target 'RoadBudee' do
 
   # Pods for RoadBudee
   pod 'SwiftVideoBackground'
+  pod 'SmileLock'
 end

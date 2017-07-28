@@ -1,0 +1,15 @@
+PODS:
+  - SmileLock (2.0.2)
+  - SwiftVideoBackground (0.06)
+
+DEPENDENCIES:
+  - SmileLock
+  - SwiftVideoBackground
+
+SPEC CHECKSUMS:
+  SmileLock: 7ae1e174b4697c0a33882dab838fc0bea94432f4
+  SwiftVideoBackground: 9099e41be1afad9f726cfc2014accb3330ad7ec1
+
+PODFILE CHECKSUM: ae3e9ea0c1ab205b39e076d17edbc76e05b3c1db
+
+COCOAPODS: 1.2.1

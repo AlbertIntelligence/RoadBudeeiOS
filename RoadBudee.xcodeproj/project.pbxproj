@@ -16,6 +16,7 @@
 		CB518F021F2B740700FE51EA /* RoadBudeeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB518F011F2B740700FE51EA /* RoadBudeeTests.swift */; };
 		CB518F0D1F2B740700FE51EA /* RoadBudeeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB518F0C1F2B740700FE51EA /* RoadBudeeUITests.swift */; };
 		CB518F281F2B834700FE51EA /* montreal.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CB518F271F2B834700FE51EA /* montreal.mp4 */; };
+		CB518F2E1F2B9F1000FE51EA /* ActivationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB518F2D1F2B9F1000FE51EA /* ActivationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		CB518F0C1F2B740700FE51EA /* RoadBudeeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoadBudeeUITests.swift; sourceTree = "<group>"; };
 		CB518F0E1F2B740700FE51EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB518F271F2B834700FE51EA /* montreal.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = montreal.mp4; sourceTree = "<group>"; };
+		CB518F2D1F2B9F1000FE51EA /* ActivationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivationViewController.swift; sourceTree = "<group>"; };
 		CED4F20F0E222E739BEA4C3E /* Pods-RoadBudee.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoadBudee.release.xcconfig"; path = "Pods/Target Support Files/Pods-RoadBudee/Pods-RoadBudee.release.xcconfig"; sourceTree = "<group>"; };
 		E3A651EC0CE1DDA407B24295 /* Pods_RoadBudee.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RoadBudee.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F25679DABD58F840D3B44B0D /* Pods_RoadBudeeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RoadBudeeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -130,6 +132,7 @@
 				CB518F271F2B834700FE51EA /* montreal.mp4 */,
 				CB518EEC1F2B740700FE51EA /* AppDelegate.swift */,
 				CB518EEE1F2B740700FE51EA /* ViewController.swift */,
+				CB518F2D1F2B9F1000FE51EA /* ActivationViewController.swift */,
 				CB518EF01F2B740700FE51EA /* Main.storyboard */,
 				CB518EF31F2B740700FE51EA /* Assets.xcassets */,
 				CB518EF51F2B740700FE51EA /* LaunchScreen.storyboard */,
@@ -347,6 +350,7 @@
 			files = (
 				CB518EEF1F2B740700FE51EA /* ViewController.swift in Sources */,
 				CB518EED1F2B740700FE51EA /* AppDelegate.swift in Sources */,
+				CB518F2E1F2B9F1000FE51EA /* ActivationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -35,6 +35,10 @@
                                             <action selector="dontHaveOneButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tL0-fD-oWG"/>
                                         </connections>
                                     </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hDM-eX-qHK">
+                                        <rect key="frame" x="67" y="60" width="240" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
@@ -46,6 +50,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="activateButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cjY-4J-8Bn"/>
                                     <segue destination="dBd-k1-pY9" kind="show" id="2Uh-Pf-4cf"/>
                                 </connections>
                             </button>
@@ -60,19 +65,21 @@
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
         </scene>
-        <!--View Controller-->
+        <!--Activation View Controller-->
         <scene sceneID="32a-tE-aB6">
             <objects>
-                <viewController id="dBd-k1-pY9" sceneMemberID="viewController">
+                <viewController id="dBd-k1-pY9" customClass="ActivationViewController" customModule="RoadBudee" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="733-Tq-QpN"/>
                         <viewControllerLayoutGuide type="bottom" id="FlO-Rf-ZHl"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="PoO-lt-QB7">
+                    <stackView key="view" opaque="NO" contentMode="scaleToFill" axis="vertical" id="FjS-Qb-e0Y">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </stackView>
+                    <connections>
+                        <outlet property="passwordStackView" destination="FjS-Qb-e0Y" id="jNf-AN-VOI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oFq-EP-GGn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
