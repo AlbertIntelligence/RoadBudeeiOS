@@ -7,19 +7,37 @@
 //
 
 import UIKit
+import SwiftVideoBackground
+
 
 class ViewController: UIViewController {
 
+    
+    @IBOutlet weak var backgroundVideo : BackgroundVideo!
+    //Url To buy RoadBudee
+    let url = URL(string:"https://roadbudee.com/en/shop/appareil-roadbudee/")!
+    var video = "montreal" //name of the video later on will fetch from server
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        backGroundVideoSetup()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    func backGroundVideoSetup(){
+        backgroundVideo.createBackgroundVideo(name: video, type: "mp4")
+    }
 
+    
+    
+    @IBAction func dontHaveOneButton(_ sender: Any) {
+        UIApplication.shared.open(url, options: [:], completionHandler: nil)
+    }
 
 }
 

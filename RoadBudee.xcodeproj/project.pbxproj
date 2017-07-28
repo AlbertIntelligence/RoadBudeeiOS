@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		468B590523CF0654F2EBF5FF /* Pods_RoadBudee.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3A651EC0CE1DDA407B24295 /* Pods_RoadBudee.framework */; };
 		CB518EED1F2B740700FE51EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB518EEC1F2B740700FE51EA /* AppDelegate.swift */; };
 		CB518EEF1F2B740700FE51EA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB518EEE1F2B740700FE51EA /* ViewController.swift */; };
 		CB518EF21F2B740700FE51EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB518EF01F2B740700FE51EA /* Main.storyboard */; };
@@ -14,6 +15,7 @@
 		CB518EF71F2B740700FE51EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB518EF51F2B740700FE51EA /* LaunchScreen.storyboard */; };
 		CB518F021F2B740700FE51EA /* RoadBudeeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB518F011F2B740700FE51EA /* RoadBudeeTests.swift */; };
 		CB518F0D1F2B740700FE51EA /* RoadBudeeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB518F0C1F2B740700FE51EA /* RoadBudeeUITests.swift */; };
+		CB518F281F2B834700FE51EA /* montreal.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CB518F271F2B834700FE51EA /* montreal.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		14E87224BD58B2B290462BE6 /* Pods-RoadBudee.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoadBudee.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RoadBudee/Pods-RoadBudee.debug.xcconfig"; sourceTree = "<group>"; };
+		6C54DF149345687857DA6D3C /* Pods_RoadBudeeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RoadBudeeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB518EE91F2B740700FE51EA /* RoadBudee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoadBudee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB518EEC1F2B740700FE51EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB518EEE1F2B740700FE51EA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +51,10 @@
 		CB518F081F2B740700FE51EA /* RoadBudeeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RoadBudeeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB518F0C1F2B740700FE51EA /* RoadBudeeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoadBudeeUITests.swift; sourceTree = "<group>"; };
 		CB518F0E1F2B740700FE51EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB518F271F2B834700FE51EA /* montreal.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = montreal.mp4; sourceTree = "<group>"; };
+		CED4F20F0E222E739BEA4C3E /* Pods-RoadBudee.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoadBudee.release.xcconfig"; path = "Pods/Target Support Files/Pods-RoadBudee/Pods-RoadBudee.release.xcconfig"; sourceTree = "<group>"; };
+		E3A651EC0CE1DDA407B24295 /* Pods_RoadBudee.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RoadBudee.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F25679DABD58F840D3B44B0D /* Pods_RoadBudeeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RoadBudeeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				468B590523CF0654F2EBF5FF /* Pods_RoadBudee.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +83,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5023CE4C76919A8DFC76C6D1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E3A651EC0CE1DDA407B24295 /* Pods_RoadBudee.framework */,
+				6C54DF149345687857DA6D3C /* Pods_RoadBudeeTests.framework */,
+				F25679DABD58F840D3B44B0D /* Pods_RoadBudeeUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8D03A43D3957CED571AEAF0C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				14E87224BD58B2B290462BE6 /* Pods-RoadBudee.debug.xcconfig */,
+				CED4F20F0E222E739BEA4C3E /* Pods-RoadBudee.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		CB518EE01F2B740700FE51EA = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +109,8 @@
 				CB518F001F2B740700FE51EA /* RoadBudeeTests */,
 				CB518F0B1F2B740700FE51EA /* RoadBudeeUITests */,
 				CB518EEA1F2B740700FE51EA /* Products */,
+				8D03A43D3957CED571AEAF0C /* Pods */,
+				5023CE4C76919A8DFC76C6D1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,6 +127,7 @@
 		CB518EEB1F2B740700FE51EA /* RoadBudee */ = {
 			isa = PBXGroup;
 			children = (
+				CB518F271F2B834700FE51EA /* montreal.mp4 */,
 				CB518EEC1F2B740700FE51EA /* AppDelegate.swift */,
 				CB518EEE1F2B740700FE51EA /* ViewController.swift */,
 				CB518EF01F2B740700FE51EA /* Main.storyboard */,
@@ -132,9 +163,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CB518F111F2B740700FE51EA /* Build configuration list for PBXNativeTarget "RoadBudee" */;
 			buildPhases = (
+				62C9652BC321DC11D798E075 /* [CP] Check Pods Manifest.lock */,
 				CB518EE51F2B740700FE51EA /* Sources */,
 				CB518EE61F2B740700FE51EA /* Frameworks */,
 				CB518EE71F2B740700FE51EA /* Resources */,
+				F8EE7D06E0F002B0D57F756E /* [CP] Embed Pods Frameworks */,
+				BEBF2A36692AB57A984E19DE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -236,6 +270,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB518EF71F2B740700FE51EA /* LaunchScreen.storyboard in Resources */,
+				CB518F281F2B834700FE51EA /* montreal.mp4 in Resources */,
 				CB518EF41F2B740700FE51EA /* Assets.xcassets in Resources */,
 				CB518EF21F2B740700FE51EA /* Main.storyboard in Resources */,
 			);
@@ -256,6 +291,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		62C9652BC321DC11D798E075 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BEBF2A36692AB57A984E19DE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RoadBudee/Pods-RoadBudee-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F8EE7D06E0F002B0D57F756E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RoadBudee/Pods-RoadBudee-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CB518EE51F2B740700FE51EA /* Sources */ = {
@@ -413,6 +496,7 @@
 		};
 		CB518F121F2B740700FE51EA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14E87224BD58B2B290462BE6 /* Pods-RoadBudee.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 96U3EB3FS3;
@@ -420,12 +504,14 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.codekl.RoadBudee;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		CB518F131F2B740700FE51EA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CED4F20F0E222E739BEA4C3E /* Pods-RoadBudee.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 96U3EB3FS3;
@@ -433,6 +519,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.codekl.RoadBudee;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -514,6 +601,7 @@
 				CB518F131F2B740700FE51EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CB518F141F2B740700FE51EA /* Build configuration list for PBXNativeTarget "RoadBudeeTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +610,7 @@
 				CB518F161F2B740700FE51EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CB518F171F2B740700FE51EA /* Build configuration list for PBXNativeTarget "RoadBudeeUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +619,7 @@
 				CB518F191F2B740700FE51EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
