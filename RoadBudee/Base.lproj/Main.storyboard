@@ -35,8 +35,8 @@
                                             <action selector="dontHaveOneButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tL0-fD-oWG"/>
                                         </connections>
                                     </button>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hDM-eX-qHK">
-                                        <rect key="frame" x="67" y="60" width="240" height="128"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Logo_BLANC.png" translatesAutoresizingMaskIntoConstraints="NO" id="TYa-A9-YrY">
+                                        <rect key="frame" x="0.0" y="25" width="375" height="259"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                 </subviews>
@@ -50,8 +50,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="activateButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cjY-4J-8Bn"/>
-                                    <segue destination="dBd-k1-pY9" kind="show" id="2Uh-Pf-4cf"/>
+                                    <segue destination="dBd-k1-pY9" kind="show" id="IrJ-Oa-hvO"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -73,17 +72,52 @@
                         <viewControllerLayoutGuide type="top" id="733-Tq-QpN"/>
                         <viewControllerLayoutGuide type="bottom" id="FlO-Rf-ZHl"/>
                     </layoutGuides>
-                    <stackView key="view" opaque="NO" contentMode="scaleToFill" axis="vertical" id="FjS-Qb-e0Y">
+                    <view key="view" contentMode="scaleToFill" id="PoO-lt-QB7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    </stackView>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="LVm-G9-2EW">
+                                <rect key="frame" x="60" y="173" width="254" height="386"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Enter your RoadBudee Pin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jqb-nW-tQe">
+                                <rect key="frame" x="87" y="127" width="200" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="padlock.png" translatesAutoresizingMaskIntoConstraints="NO" id="Btc-8z-gCV">
+                                <rect key="frame" x="169" y="68" width="36" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="center" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="nJH-IY-o1R">
+                                <rect key="frame" x="5" y="598" width="364" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <string key="title">Incorrect PIN
+Click here to order your RoadBudee !</string>
+                                    <color key="titleColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="orderRoadBudeeMessage:" destination="dBd-k1-pY9" eventType="touchUpInside" id="QOs-1b-poi"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
                     <connections>
-                        <outlet property="passwordStackView" destination="FjS-Qb-e0Y" id="jNf-AN-VOI"/>
+                        <outlet property="orderRoadBudeeMessage" destination="nJH-IY-o1R" id="VMq-A8-MfG"/>
+                        <outlet property="passwordStackView" destination="LVm-G9-2EW" id="Sm7-cB-dTc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oFq-EP-GGn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1007" y="137"/>
+            <point key="canvasLocation" x="968.79999999999995" y="136.28185907046478"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Logo_BLANC.png" width="800" height="600"/>
+        <image name="padlock.png" width="72" height="72"/>
+    </resources>
 </document>
