@@ -6,6 +6,8 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,13 +23,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e8f-0H-Rud" customClass="BackgroundVideo" customModule="SwiftVideoBackground">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e8f-0H-Rud" customClass="BackgroundVideo" customModule="SwiftVideoBackground">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Bv-x2-3sx">
-                                        <rect key="frame" x="130" y="598" width="114" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Bv-x2-3sx">
+                                        <rect key="frame" x="130.5" y="598" width="114" height="30"/>
                                         <state key="normal" title="Don't have one ?">
                                             <color key="titleColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
@@ -35,26 +35,47 @@
                                             <action selector="dontHaveOneButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tL0-fD-oWG"/>
                                         </connections>
                                     </button>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Logo_BLANC.png" translatesAutoresizingMaskIntoConstraints="NO" id="TYa-A9-YrY">
-                                        <rect key="frame" x="0.0" y="25" width="375" height="259"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo_BLANC.png" translatesAutoresizingMaskIntoConstraints="NO" id="TYa-A9-YrY">
+                                        <rect key="frame" x="-53" y="-111" width="481" height="373"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="373" id="q7f-vr-k6G"/>
+                                        </constraints>
                                     </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8dM-r5-4Sj">
+                                        <rect key="frame" x="0.0" y="527" width="375" height="40"/>
+                                        <color key="backgroundColor" red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="3tV-um-Mju"/>
+                                        </constraints>
+                                        <state key="normal" title="ACTIVATE">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="dBd-k1-pY9" kind="show" id="IrJ-Oa-hvO"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="e8f-0H-Rud" secondAttribute="height" multiplier="375:667" id="2Bp-Th-g9G"/>
+                                    <constraint firstItem="TYa-A9-YrY" firstAttribute="leading" secondItem="e8f-0H-Rud" secondAttribute="leading" constant="-53" id="36G-nO-qDS"/>
+                                    <constraint firstItem="8dM-r5-4Sj" firstAttribute="centerX" secondItem="3Bv-x2-3sx" secondAttribute="centerX" id="CUC-V4-bUP"/>
+                                    <constraint firstItem="8dM-r5-4Sj" firstAttribute="leading" secondItem="e8f-0H-Rud" secondAttribute="leading" id="HGl-67-HRe"/>
+                                    <constraint firstAttribute="trailing" secondItem="8dM-r5-4Sj" secondAttribute="trailing" id="ajO-jL-koa"/>
+                                    <constraint firstItem="TYa-A9-YrY" firstAttribute="top" secondItem="e8f-0H-Rud" secondAttribute="top" constant="-111" id="f6A-Ge-9yB"/>
+                                    <constraint firstItem="3Bv-x2-3sx" firstAttribute="top" secondItem="8dM-r5-4Sj" secondAttribute="bottom" constant="31" id="fbC-Bh-iDw"/>
+                                    <constraint firstItem="TYa-A9-YrY" firstAttribute="centerX" secondItem="8dM-r5-4Sj" secondAttribute="centerX" id="gcp-gF-KSR"/>
+                                    <constraint firstAttribute="bottom" secondItem="3Bv-x2-3sx" secondAttribute="bottom" constant="39" id="pHz-ls-SmH"/>
+                                </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8dM-r5-4Sj">
-                                <rect key="frame" x="0.0" y="524" width="375" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="ACTIVATE">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="dBd-k1-pY9" kind="show" id="IrJ-Oa-hvO"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="e8f-0H-Rud" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="933-Qx-1Nf"/>
+                            <constraint firstAttribute="trailing" secondItem="e8f-0H-Rud" secondAttribute="trailing" id="Drj-G3-kSi"/>
+                            <constraint firstItem="e8f-0H-Rud" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="L3W-nh-fIs"/>
+                            <constraint firstItem="e8f-0H-Rud" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="XIs-vc-6SW"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="backgroundVideo" destination="e8f-0H-Rud" id="7en-lw-4sN"/>
@@ -76,24 +97,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="LVm-G9-2EW">
-                                <rect key="frame" x="60" y="173" width="254" height="386"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Enter your RoadBudee Pin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jqb-nW-tQe">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your RoadBudee Pin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jqb-nW-tQe">
                                 <rect key="frame" x="87" y="127" width="200" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="padlock.png" translatesAutoresizingMaskIntoConstraints="NO" id="Btc-8z-gCV">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="padlock.png" translatesAutoresizingMaskIntoConstraints="NO" id="Btc-8z-gCV">
                                 <rect key="frame" x="169" y="68" width="36" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="RgD-cj-vdE"/>
+                                    <constraint firstAttribute="width" constant="36" id="suP-on-n18"/>
+                                </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="center" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="nJH-IY-o1R">
-                                <rect key="frame" x="5" y="598" width="364" height="49"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="nJH-IY-o1R">
+                                <rect key="frame" x="5" y="599" width="364" height="48"/>
                                 <state key="normal">
                                     <string key="title">Incorrect PIN
 Click here to order your RoadBudee !</string>
@@ -103,8 +121,26 @@ Click here to order your RoadBudee !</string>
                                     <action selector="orderRoadBudeeMessage:" destination="dBd-k1-pY9" eventType="touchUpInside" id="QOs-1b-poi"/>
                                 </connections>
                             </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="LVm-G9-2EW">
+                                <rect key="frame" x="60" y="171" width="254" height="387"/>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Jqb-nW-tQe" firstAttribute="leading" secondItem="PoO-lt-QB7" secondAttribute="leadingMargin" constant="71" id="0XD-41-Z9H"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="LVm-G9-2EW" secondAttribute="trailing" constant="45" id="4hQ-3Y-1Xw"/>
+                            <constraint firstItem="Jqb-nW-tQe" firstAttribute="top" secondItem="Btc-8z-gCV" secondAttribute="bottom" constant="28" id="8db-4d-AAS"/>
+                            <constraint firstItem="LVm-G9-2EW" firstAttribute="leading" secondItem="PoO-lt-QB7" secondAttribute="leadingMargin" constant="44" id="96g-Qv-yc7"/>
+                            <constraint firstItem="nJH-IY-o1R" firstAttribute="leading" secondItem="PoO-lt-QB7" secondAttribute="leading" constant="5" id="C3Y-om-PUu"/>
+                            <constraint firstItem="nJH-IY-o1R" firstAttribute="top" secondItem="LVm-G9-2EW" secondAttribute="bottom" constant="41" id="FTO-B5-Qh1"/>
+                            <constraint firstItem="FlO-Rf-ZHl" firstAttribute="top" secondItem="nJH-IY-o1R" secondAttribute="bottom" constant="20" id="J0Y-2b-QZv"/>
+                            <constraint firstItem="Btc-8z-gCV" firstAttribute="centerX" secondItem="Jqb-nW-tQe" secondAttribute="centerX" id="Kmk-NE-oYb"/>
+                            <constraint firstItem="LVm-G9-2EW" firstAttribute="top" secondItem="Jqb-nW-tQe" secondAttribute="bottom" constant="23" id="cvs-dY-jii"/>
+                            <constraint firstItem="LVm-G9-2EW" firstAttribute="top" secondItem="Jqb-nW-tQe" secondAttribute="bottom" constant="23" id="dIW-Er-Aks"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Jqb-nW-tQe" secondAttribute="trailing" constant="72" id="het-8M-lwl"/>
+                            <constraint firstAttribute="trailing" secondItem="nJH-IY-o1R" secondAttribute="trailing" constant="6" id="jKC-fR-m27"/>
+                            <constraint firstItem="Btc-8z-gCV" firstAttribute="top" secondItem="733-Tq-QpN" secondAttribute="bottom" constant="48" id="ld9-wf-XD9"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="orderRoadBudeeMessage" destination="nJH-IY-o1R" id="VMq-A8-MfG"/>
