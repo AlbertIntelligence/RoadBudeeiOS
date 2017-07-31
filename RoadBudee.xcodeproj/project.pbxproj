@@ -19,6 +19,7 @@
 		CB518F2E1F2B9F1000FE51EA /* ActivationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB518F2D1F2B9F1000FE51EA /* ActivationViewController.swift */; };
 		CB518F301F2BE23800FE51EA /* Logo_BLANC.png in Resources */ = {isa = PBXBuildFile; fileRef = CB518F2F1F2BE23800FE51EA /* Logo_BLANC.png */; };
 		CB518F321F2C01F800FE51EA /* padlock.png in Resources */ = {isa = PBXBuildFile; fileRef = CB518F311F2C01F800FE51EA /* padlock.png */; };
+		CB518F341F2E43B300FE51EA /* SplashscreenLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = CB518F331F2E43B300FE51EA /* SplashscreenLogo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		CB518F2D1F2B9F1000FE51EA /* ActivationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivationViewController.swift; sourceTree = "<group>"; };
 		CB518F2F1F2BE23800FE51EA /* Logo_BLANC.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo_BLANC.png; sourceTree = "<group>"; };
 		CB518F311F2C01F800FE51EA /* padlock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = padlock.png; sourceTree = "<group>"; };
+		CB518F331F2E43B300FE51EA /* SplashscreenLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SplashscreenLogo.png; sourceTree = "<group>"; };
 		CED4F20F0E222E739BEA4C3E /* Pods-RoadBudee.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoadBudee.release.xcconfig"; path = "Pods/Target Support Files/Pods-RoadBudee/Pods-RoadBudee.release.xcconfig"; sourceTree = "<group>"; };
 		E3A651EC0CE1DDA407B24295 /* Pods_RoadBudee.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RoadBudee.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F25679DABD58F840D3B44B0D /* Pods_RoadBudeeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RoadBudeeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -137,6 +139,7 @@
 				CB518EEC1F2B740700FE51EA /* AppDelegate.swift */,
 				CB518EEE1F2B740700FE51EA /* ViewController.swift */,
 				CB518F2D1F2B9F1000FE51EA /* ActivationViewController.swift */,
+				CB518F331F2E43B300FE51EA /* SplashscreenLogo.png */,
 				CB518EF01F2B740700FE51EA /* Main.storyboard */,
 				CB518F311F2C01F800FE51EA /* padlock.png */,
 				CB518F2F1F2BE23800FE51EA /* Logo_BLANC.png */,
@@ -278,6 +281,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB518F341F2E43B300FE51EA /* SplashscreenLogo.png in Resources */,
 				CB518EF71F2B740700FE51EA /* LaunchScreen.storyboard in Resources */,
 				CB518F281F2B834700FE51EA /* montreal.mp4 in Resources */,
 				CB518F301F2BE23800FE51EA /* Logo_BLANC.png in Resources */,
