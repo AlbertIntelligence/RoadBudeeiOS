@@ -239,7 +239,7 @@
 				TargetAttributes = {
 					CB518EE81F2B740700FE51EA = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = 96U3EB3FS3;
+						DevelopmentTeam = EB483M4LXP;
 						ProvisioningStyle = Automatic;
 					};
 					CB518EFC1F2B740700FE51EA = {
@@ -515,13 +515,14 @@
 			baseConfigurationReference = 14E87224BD58B2B290462BE6 /* Pods-RoadBudee.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 96U3EB3FS3;
+				DEVELOPMENT_TEAM = EB483M4LXP;
 				INFOPLIST_FILE = RoadBudee/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.codekl.RoadBudee;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -530,13 +531,14 @@
 			baseConfigurationReference = CED4F20F0E222E739BEA4C3E /* Pods-RoadBudee.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 96U3EB3FS3;
+				DEVELOPMENT_TEAM = EB483M4LXP;
 				INFOPLIST_FILE = RoadBudee/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.codekl.RoadBudee;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

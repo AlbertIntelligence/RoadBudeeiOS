@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -20,14 +19,14 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e8f-0H-Rud" customClass="BackgroundVideo" customModule="SwiftVideoBackground">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Bv-x2-3sx">
-                                        <rect key="frame" x="130.5" y="598" width="114" height="30"/>
+                                        <rect key="frame" x="150" y="667" width="114" height="30"/>
                                         <state key="normal" title="Don't have one ?">
                                             <color key="titleColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
@@ -36,13 +35,13 @@
                                         </connections>
                                     </button>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo_BLANC.png" translatesAutoresizingMaskIntoConstraints="NO" id="TYa-A9-YrY">
-                                        <rect key="frame" x="-53" y="-111" width="481" height="373"/>
+                                        <rect key="frame" x="-53" y="-111" width="520" height="373"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="373" id="q7f-vr-k6G"/>
                                         </constraints>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8dM-r5-4Sj">
-                                        <rect key="frame" x="0.0" y="527" width="375" height="40"/>
+                                        <rect key="frame" x="0.0" y="596" width="414" height="40"/>
                                         <color key="backgroundColor" red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="3tV-um-Mju"/>
@@ -57,7 +56,6 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="e8f-0H-Rud" secondAttribute="height" multiplier="375:667" id="2Bp-Th-g9G"/>
                                     <constraint firstItem="TYa-A9-YrY" firstAttribute="leading" secondItem="e8f-0H-Rud" secondAttribute="leading" constant="-53" id="36G-nO-qDS"/>
                                     <constraint firstItem="8dM-r5-4Sj" firstAttribute="centerX" secondItem="3Bv-x2-3sx" secondAttribute="centerX" id="CUC-V4-bUP"/>
                                     <constraint firstItem="8dM-r5-4Sj" firstAttribute="leading" secondItem="e8f-0H-Rud" secondAttribute="leading" id="HGl-67-HRe"/>
@@ -94,24 +92,24 @@
                         <viewControllerLayoutGuide type="bottom" id="FlO-Rf-ZHl"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="PoO-lt-QB7">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your RoadBudee Pin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jqb-nW-tQe">
-                                <rect key="frame" x="87" y="127" width="200" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your RoadBudee Pin" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jqb-nW-tQe">
+                                <rect key="frame" x="91" y="127" width="231" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="padlock.png" translatesAutoresizingMaskIntoConstraints="NO" id="Btc-8z-gCV">
-                                <rect key="frame" x="169" y="68" width="36" height="31"/>
+                                <rect key="frame" x="189" y="68" width="36" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="31" id="RgD-cj-vdE"/>
                                     <constraint firstAttribute="width" constant="36" id="suP-on-n18"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="nJH-IY-o1R">
-                                <rect key="frame" x="5" y="599" width="364" height="48"/>
+                                <rect key="frame" x="5" y="668" width="403" height="48"/>
                                 <state key="normal">
                                     <string key="title">Incorrect PIN
 Click here to order your RoadBudee !</string>
@@ -122,7 +120,7 @@ Click here to order your RoadBudee !</string>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="LVm-G9-2EW">
-                                <rect key="frame" x="60" y="171" width="254" height="387"/>
+                                <rect key="frame" x="64" y="171" width="285" height="456"/>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -133,6 +131,7 @@ Click here to order your RoadBudee !</string>
                             <constraint firstItem="LVm-G9-2EW" firstAttribute="leading" secondItem="PoO-lt-QB7" secondAttribute="leadingMargin" constant="44" id="96g-Qv-yc7"/>
                             <constraint firstItem="nJH-IY-o1R" firstAttribute="leading" secondItem="PoO-lt-QB7" secondAttribute="leading" constant="5" id="C3Y-om-PUu"/>
                             <constraint firstItem="nJH-IY-o1R" firstAttribute="top" secondItem="LVm-G9-2EW" secondAttribute="bottom" constant="41" id="FTO-B5-Qh1"/>
+                            <constraint firstItem="Jqb-nW-tQe" firstAttribute="centerX" secondItem="PoO-lt-QB7" secondAttribute="centerX" id="Gl8-kP-Yqe"/>
                             <constraint firstItem="FlO-Rf-ZHl" firstAttribute="top" secondItem="nJH-IY-o1R" secondAttribute="bottom" constant="20" id="J0Y-2b-QZv"/>
                             <constraint firstItem="Btc-8z-gCV" firstAttribute="centerX" secondItem="Jqb-nW-tQe" secondAttribute="centerX" id="Kmk-NE-oYb"/>
                             <constraint firstItem="LVm-G9-2EW" firstAttribute="top" secondItem="Jqb-nW-tQe" secondAttribute="bottom" constant="23" id="cvs-dY-jii"/>
