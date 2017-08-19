@@ -8,4 +8,8 @@ target 'RoadBudee' do
   # Pods for RoadBudee
   pod 'SwiftVideoBackground'
   pod 'SmileLock'
+  pod 'Firebase/Core'
+  pod 'Firebase/Database'
+  pod 'Firebase/Performance'
+  pod 'JTMaterialTransition', '~> 2.0'
 end

@@ -16,8 +16,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var backgroundVideo : BackgroundVideo!
     //Url To buy RoadBudee
-    let url = URL(string:"https://roadbudee.com/en/shop/appareil-roadbudee/")!
-    var video = "montreal" //name of the video later on will fetch from server
+    let url = URL(string:Constants.WEBSITE_URL)!
     
     
     override func viewDidLoad() {
@@ -33,7 +32,7 @@ class ViewController: UIViewController {
     }
     
     func backGroundVideoSetup(){
-        backgroundVideo.createBackgroundVideo(name: video, type: "mp4")
+        backgroundVideo.createBackgroundVideo(name: Constants.BACKGROUND_VIDEO, type: Constants.BACKGROUND_VIDEO_TYPE)
     }
 
     

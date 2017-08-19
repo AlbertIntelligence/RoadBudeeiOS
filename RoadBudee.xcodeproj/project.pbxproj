@@ -20,6 +20,15 @@
 		CB518F321F2C01F800FE51EA /* padlock.png in Resources */ = {isa = PBXBuildFile; fileRef = CB518F311F2C01F800FE51EA /* padlock.png */; };
 		CB518F341F2E43B300FE51EA /* SplashscreenLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = CB518F331F2E43B300FE51EA /* SplashscreenLogo.png */; };
 		CB518F361F31275F00FE51EA /* montreal.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CB518F351F31275F00FE51EA /* montreal.mp4 */; };
+		CBD5EB3E1F478290000D4B42 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CBD5EB3D1F478290000D4B42 /* GoogleService-Info.plist */; };
+		CBD5EB461F478856000D4B42 /* CustomImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD5EB451F478856000D4B42 /* CustomImage.swift */; };
+		CBD5EB481F47898F000D4B42 /* ActivationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD5EB471F47898F000D4B42 /* ActivationView.swift */; };
+		CBD5EB4E1F4790DA000D4B42 /* RoadBudeeMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD5EB4D1F4790DA000D4B42 /* RoadBudeeMapViewController.swift */; };
+		CBD5EB531F47CEF8000D4B42 /* BudeesHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD5EB521F47CEF8000D4B42 /* BudeesHandler.swift */; };
+		CBD5EB551F47D059000D4B42 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD5EB541F47D059000D4B42 /* Constants.swift */; };
+		CBD5EB571F480E63000D4B42 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD5EB561F480E63000D4B42 /* ContactViewController.swift */; };
+		CBD5EB591F48123A000D4B42 /* plus@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CBD5EB581F48123A000D4B42 /* plus@2x.png */; };
+		CBD5EB5B1F4812B2000D4B42 /* close@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CBD5EB5A1F4812B2000D4B42 /* close@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +53,7 @@
 		6C54DF149345687857DA6D3C /* Pods_RoadBudeeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RoadBudeeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB518EE91F2B740700FE51EA /* RoadBudee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoadBudee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB518EEC1F2B740700FE51EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CB518EEE1F2B740700FE51EA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CB518EEE1F2B740700FE51EA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = RoadBudee/ViewController.swift; sourceTree = "<group>"; };
 		CB518EF11F2B740700FE51EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CB518EF31F2B740700FE51EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB518EF61F2B740700FE51EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -55,11 +64,20 @@
 		CB518F081F2B740700FE51EA /* RoadBudeeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RoadBudeeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB518F0C1F2B740700FE51EA /* RoadBudeeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoadBudeeUITests.swift; sourceTree = "<group>"; };
 		CB518F0E1F2B740700FE51EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CB518F2D1F2B9F1000FE51EA /* ActivationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivationViewController.swift; sourceTree = "<group>"; };
-		CB518F2F1F2BE23800FE51EA /* Logo_BLANC.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo_BLANC.png; sourceTree = "<group>"; };
-		CB518F311F2C01F800FE51EA /* padlock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = padlock.png; sourceTree = "<group>"; };
-		CB518F331F2E43B300FE51EA /* SplashscreenLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SplashscreenLogo.png; sourceTree = "<group>"; };
-		CB518F351F31275F00FE51EA /* montreal.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = montreal.mp4; sourceTree = "<group>"; };
+		CB518F2D1F2B9F1000FE51EA /* ActivationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ActivationViewController.swift; path = RoadBudee/ActivationViewController.swift; sourceTree = "<group>"; };
+		CB518F2F1F2BE23800FE51EA /* Logo_BLANC.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Logo_BLANC.png; path = RoadBudee/Logo_BLANC.png; sourceTree = "<group>"; };
+		CB518F311F2C01F800FE51EA /* padlock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = padlock.png; path = RoadBudee/padlock.png; sourceTree = "<group>"; };
+		CB518F331F2E43B300FE51EA /* SplashscreenLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = SplashscreenLogo.png; path = RoadBudee/SplashscreenLogo.png; sourceTree = "<group>"; };
+		CB518F351F31275F00FE51EA /* montreal.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = montreal.mp4; path = RoadBudee/montreal.mp4; sourceTree = "<group>"; };
+		CBD5EB3D1F478290000D4B42 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CBD5EB451F478856000D4B42 /* CustomImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomImage.swift; sourceTree = "<group>"; };
+		CBD5EB471F47898F000D4B42 /* ActivationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivationView.swift; sourceTree = "<group>"; };
+		CBD5EB4D1F4790DA000D4B42 /* RoadBudeeMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoadBudeeMapViewController.swift; sourceTree = "<group>"; };
+		CBD5EB521F47CEF8000D4B42 /* BudeesHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BudeesHandler.swift; sourceTree = "<group>"; };
+		CBD5EB541F47D059000D4B42 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		CBD5EB561F480E63000D4B42 /* ContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
+		CBD5EB581F48123A000D4B42 /* plus@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "plus@2x.png"; path = "RoadBudee/plus@2x.png"; sourceTree = "<group>"; };
+		CBD5EB5A1F4812B2000D4B42 /* close@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "close@2x.png"; sourceTree = "<group>"; };
 		CED4F20F0E222E739BEA4C3E /* Pods-RoadBudee.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoadBudee.release.xcconfig"; path = "Pods/Target Support Files/Pods-RoadBudee/Pods-RoadBudee.release.xcconfig"; sourceTree = "<group>"; };
 		E3A651EC0CE1DDA407B24295 /* Pods_RoadBudee.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RoadBudee.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F25679DABD58F840D3B44B0D /* Pods_RoadBudeeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RoadBudeeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -135,14 +153,14 @@
 		CB518EEB1F2B740700FE51EA /* RoadBudee */ = {
 			isa = PBXGroup;
 			children = (
+				CBD5EB4F1F47A166000D4B42 /* Plugins */,
+				CBD5EB421F478604000D4B42 /* Resources */,
+				CBD5EB411F4785D4000D4B42 /* Controller */,
+				CBD5EB401F4785C9000D4B42 /* View */,
+				CBD5EB3F1F4785A8000D4B42 /* Model */,
 				CB518EEC1F2B740700FE51EA /* AppDelegate.swift */,
-				CB518EEE1F2B740700FE51EA /* ViewController.swift */,
-				CB518F2D1F2B9F1000FE51EA /* ActivationViewController.swift */,
-				CB518F331F2E43B300FE51EA /* SplashscreenLogo.png */,
-				CB518F351F31275F00FE51EA /* montreal.mp4 */,
 				CB518EF01F2B740700FE51EA /* Main.storyboard */,
-				CB518F311F2C01F800FE51EA /* padlock.png */,
-				CB518F2F1F2BE23800FE51EA /* Logo_BLANC.png */,
+				CBD5EB3D1F478290000D4B42 /* GoogleService-Info.plist */,
 				CB518EF31F2B740700FE51EA /* Assets.xcassets */,
 				CB518EF51F2B740700FE51EA /* LaunchScreen.storyboard */,
 				CB518EF81F2B740700FE51EA /* Info.plist */,
@@ -166,6 +184,75 @@
 				CB518F0E1F2B740700FE51EA /* Info.plist */,
 			);
 			path = RoadBudeeUITests;
+			sourceTree = "<group>";
+		};
+		CBD5EB3F1F4785A8000D4B42 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CBD5EB471F47898F000D4B42 /* ActivationView.swift */,
+			);
+			name = Model;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		CBD5EB401F4785C9000D4B42 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CBD5EB451F478856000D4B42 /* CustomImage.swift */,
+			);
+			name = View;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		CBD5EB411F4785D4000D4B42 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CB518EEE1F2B740700FE51EA /* ViewController.swift */,
+				CB518F2D1F2B9F1000FE51EA /* ActivationViewController.swift */,
+				CBD5EB4D1F4790DA000D4B42 /* RoadBudeeMapViewController.swift */,
+				CBD5EB561F480E63000D4B42 /* ContactViewController.swift */,
+			);
+			name = Controller;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		CBD5EB421F478604000D4B42 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CBD5EB441F478635000D4B42 /* video */,
+				CBD5EB431F47862D000D4B42 /* image */,
+			);
+			name = Resources;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		CBD5EB431F47862D000D4B42 /* image */ = {
+			isa = PBXGroup;
+			children = (
+				CBD5EB5A1F4812B2000D4B42 /* close@2x.png */,
+				CBD5EB581F48123A000D4B42 /* plus@2x.png */,
+				CB518F2F1F2BE23800FE51EA /* Logo_BLANC.png */,
+				CB518F311F2C01F800FE51EA /* padlock.png */,
+				CB518F331F2E43B300FE51EA /* SplashscreenLogo.png */,
+			);
+			name = image;
+			sourceTree = "<group>";
+		};
+		CBD5EB441F478635000D4B42 /* video */ = {
+			isa = PBXGroup;
+			children = (
+				CB518F351F31275F00FE51EA /* montreal.mp4 */,
+			);
+			name = video;
+			sourceTree = "<group>";
+		};
+		CBD5EB4F1F47A166000D4B42 /* Plugins */ = {
+			isa = PBXGroup;
+			children = (
+				CBD5EB521F47CEF8000D4B42 /* BudeesHandler.swift */,
+				CBD5EB541F47D059000D4B42 /* Constants.swift */,
+			);
+			name = Plugins;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -282,9 +369,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB518F341F2E43B300FE51EA /* SplashscreenLogo.png in Resources */,
+				CBD5EB3E1F478290000D4B42 /* GoogleService-Info.plist in Resources */,
 				CB518EF71F2B740700FE51EA /* LaunchScreen.storyboard in Resources */,
 				CB518F301F2BE23800FE51EA /* Logo_BLANC.png in Resources */,
 				CB518F361F31275F00FE51EA /* montreal.mp4 in Resources */,
+				CBD5EB5B1F4812B2000D4B42 /* close@2x.png in Resources */,
+				CBD5EB591F48123A000D4B42 /* plus@2x.png in Resources */,
 				CB518EF41F2B740700FE51EA /* Assets.xcassets in Resources */,
 				CB518F321F2C01F800FE51EA /* padlock.png in Resources */,
 				CB518EF21F2B740700FE51EA /* Main.storyboard in Resources */,
@@ -360,9 +450,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBD5EB4E1F4790DA000D4B42 /* RoadBudeeMapViewController.swift in Sources */,
+				CBD5EB481F47898F000D4B42 /* ActivationView.swift in Sources */,
 				CB518EEF1F2B740700FE51EA /* ViewController.swift in Sources */,
 				CB518EED1F2B740700FE51EA /* AppDelegate.swift in Sources */,
+				CBD5EB461F478856000D4B42 /* CustomImage.swift in Sources */,
+				CBD5EB571F480E63000D4B42 /* ContactViewController.swift in Sources */,
 				CB518F2E1F2B9F1000FE51EA /* ActivationViewController.swift in Sources */,
+				CBD5EB531F47CEF8000D4B42 /* BudeesHandler.swift in Sources */,
+				CBD5EB551F47D059000D4B42 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -515,11 +611,15 @@
 			baseConfigurationReference = 14E87224BD58B2B290462BE6 /* Pods-RoadBudee.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = EB483M4LXP;
 				INFOPLIST_FILE = RoadBudee/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.codekl.RoadBudee;
+				PRODUCT_BUNDLE_IDENTIFIER = RoadBudee;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -531,11 +631,14 @@
 			baseConfigurationReference = CED4F20F0E222E739BEA4C3E /* Pods-RoadBudee.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = EB483M4LXP;
 				INFOPLIST_FILE = RoadBudee/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.codekl.RoadBudee;
+				PRODUCT_BUNDLE_IDENTIFIER = RoadBudee;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;

@@ -18,8 +18,8 @@ class ActivationViewController: UIViewController {
     @IBOutlet weak var orderRoadBudeeMessage: UIButton!
     @IBOutlet weak var passwordStackView: UIStackView!
     var passwordContainerView: PasswordContainerView!
+    let roadBudeeMapSegue = "roadbudeeMap"
     let viewControllerObject = ViewController()
-    let kPasswordDigit = 8
     
     
     override func viewDidLoad() {
@@ -33,7 +33,7 @@ class ActivationViewController: UIViewController {
     }
     
     func pinCodeViewSetup(){
-        passwordContainerView = PasswordContainerView.create(in: passwordStackView, digit: kPasswordDigit)
+        passwordContainerView = PasswordContainerView.create(in: passwordStackView, digit: Constants.PIN_NUMBER_DIGIT)
         passwordContainerView.delegate = self
         passwordContainerView.highlightedColor =  UIColor(red: 0xFF, green: 0x95, blue: 0x00)
     }
@@ -74,6 +74,7 @@ private extension ActivationViewController {
     }
     
     func validationSuccess() {
+        performSegue(withIdentifier: roadBudeeMapSegue, sender: nil)
         orderRoadBudeeMessage.isHidden = false
     }
     

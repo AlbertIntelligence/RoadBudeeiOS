@@ -144,11 +144,69 @@ Click here to order your RoadBudee !</string>
                     <connections>
                         <outlet property="orderRoadBudeeMessage" destination="nJH-IY-o1R" id="VMq-A8-MfG"/>
                         <outlet property="passwordStackView" destination="LVm-G9-2EW" id="Sm7-cB-dTc"/>
+                        <segue destination="pAg-OR-iNS" kind="show" identifier="roadbudeeMap" id="mFl-3B-j7i"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oFq-EP-GGn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="968.79999999999995" y="136.28185907046478"/>
+        </scene>
+        <!--Road Budee Map View Controller-->
+        <scene sceneID="Dyh-Bg-B0b">
+            <objects>
+                <viewController id="pAg-OR-iNS" customClass="RoadBudeeMapViewController" customModule="RoadBudee" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KKg-pJ-gWd"/>
+                        <viewControllerLayoutGuide type="bottom" id="XIM-MJ-muI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="E0P-RG-GsK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="6pN-zS-fKz">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </mapView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="l0F-4a-j09">
+                                <rect key="frame" x="20" y="88" width="374" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="l0F-4a-j09" firstAttribute="top" secondItem="KKg-pJ-gWd" secondAttribute="bottom" constant="68" id="F36-hp-dqc"/>
+                            <constraint firstItem="l0F-4a-j09" firstAttribute="leading" secondItem="E0P-RG-GsK" secondAttribute="leadingMargin" id="JG5-Ml-jLJ"/>
+                            <constraint firstItem="l0F-4a-j09" firstAttribute="trailing" secondItem="E0P-RG-GsK" secondAttribute="trailingMargin" id="Zf7-bN-4rM"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="RoadBudeeMap" destination="6pN-zS-fKz" id="aKQ-ol-EIZ"/>
+                        <outlet property="roadBudeeMap" destination="6pN-zS-fKz" id="PzX-ym-5PN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LqC-64-THp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1769.5652173913045" y="138.58695652173915"/>
+        </scene>
+        <!--Contact View Controller-->
+        <scene sceneID="fhU-n3-tat">
+            <objects>
+                <viewController id="zYp-i7-MeH" customClass="ContactViewController" customModule="RoadBudee" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SKf-1t-ZOD"/>
+                        <viewControllerLayoutGuide type="bottom" id="ocq-vF-60i"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BaA-y6-X25">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Dx-ZH-Rd1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1770" y="932"/>
         </scene>
     </scenes>
     <resources>
